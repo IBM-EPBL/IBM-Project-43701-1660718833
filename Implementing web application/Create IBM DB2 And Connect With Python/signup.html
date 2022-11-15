@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>signup page</title>
+<link href="/static/signup.css" rel="stylesheet">
+</head>
+<body>
+<div id="form">
+<form action="/login" method="post"  style="border:1px solid #ccc">
+    <div class="container-md">
+      <h1>Sign Up</h1>
+      <hr>
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter username" name="uname" required>
+
+      <label for="roll"><b>Roll Number</b></label>
+      <input type="text" placeholder="Enter roll number" name="roll" required>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+  
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+  
+      <div class="clearfix">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button><br><br>
+        <p>Already registered user <a href="{{url_for('signin')}}">signin</a></p>
+      </div>
+    </div>
+  </form></div></body></html>
